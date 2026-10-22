@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student GitHub Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            padding: 25px 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .section-title {
+            font-size: 21px;
+            margin-bottom: 8px;
+            color: #172554;
+        }
+
+        .description {
+            color: #64748b;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 450px;
+        }
+
+        thead {
+            background: #2563eb;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: center;
+            width: 90px;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background: #eff6ff;
+        }
+
+        .student-name {
+            font-weight: bold;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .github-link:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            padding: 18px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 23px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            th, td {
+                padding: 12px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Student GitHub Projects</h1>
+            <p>Explore the projects created by our students</p>
+        </header>
+
+        <main class="content">
+
+            <h2 class="section-title">Student Project List</h2>
+
+            <p class="description">
+                Click on the GitHub Page button to visit a student's project.
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Student Name</th>
+                            <th>GitHub Page</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Student 1 -->
+                        <tr>
+                            <td>1</td>
+                            <td class="student-name">Rahul Kumar</td>
+                            <td>
+                                <a class="github-link"
+                                   href="https://rahul123.github.io/project/"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View Project
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- Student 2 -->
+                        <tr>
+                            <td>2</td>
+                            <td class="student-name">Priya Kumari</td>
+                            <td>
+                                <a class="github-link"
+                                   href="https://priya123.github.io/project/"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View Project
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- Student 3 -->
+                        <tr>
+                            <td>3</td>
+                            <td class="student-name">Amit Kumar</td>
+                            <td>
+                                <a class="github-link"
+                                   href="https://amit123.github.io/project/"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    View Project
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- Add more student rows here -->
+
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            Student Projects Showcase | Designed with HTML & CSS
+        </footer>
+
+    </div>
+
+</body>
+</html>
